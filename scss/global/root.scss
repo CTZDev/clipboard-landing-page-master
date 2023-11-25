@@ -1,0 +1,12 @@
+@use "colors" as *;
+
+:root {
+  //Colors
+  @each $prop, $value in $colors {
+    --#{$prop}: #{$value};
+  }
+  //Default
+  --font-family: "Open Sans", "Poppins", arial;
+  --fz-sm: 16px;
+  --fz-md: 18px;
+}
