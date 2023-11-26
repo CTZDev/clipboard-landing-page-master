@@ -1,0 +1,73 @@
+@use "../util" as *;
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(168);
+}
+
+.hero {
+  text-align: center;
+
+  &-content {
+    padding: rem(50) 0;
+  }
+
+  &-buttons {
+    gap: rem(16);
+  }
+}
+
+.snippets {
+  &-computer {
+    padding: rem(64) 0;
+  }
+
+  &-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: rem(56);
+  }
+}
+
+.access-img {
+  padding-top: rem(64);
+}
+
+.workflow {
+  &-intro {
+    padding-bottom: rem(86);
+  }
+
+  &-details {
+    gap: rem(50);
+
+    &-control {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & .subtitle {
+        padding: rem(40) 0 rem(20);
+      }
+    }
+  }
+}
+
+.enterprises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(56);
+}
+
+.abstract {
+  padding-bottom: rem(164);
+
+  &-buttons {
+    gap: rem(16);
+    padding-top: rem(46);
+  }
+}

@@ -1,3 +1,30 @@
-
+.container {
+  padding-top: 6.25rem;
+  position: relative;
+}
+.container .header {
+  padding: 2.5rem 0 1.25rem;
+}
+.container .header-brand > img {
+  margin: auto;
+}
+.container::before {
+  content: "";
+  background-image: url("../images/bg-header-mobile.png");
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+@media only screen and (min-width: 64em) {
+  .container::before {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

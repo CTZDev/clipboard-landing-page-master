@@ -5,53 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header wrapper">
         <figure class="header-brand">
           <img src="images/logo.svg" alt="Logo Enterprise" />
         </figure>
       </header>
 
-      <main class="main">
+      <main class="main wrapper">
         <section class="hero">
           <div class="hero-content">
-            <h1>A history of everything you copy</h1>
-            <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+            <h1 class="title">A history of everything you copy</h1>
+            <p class="text">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
           </div>
-          <div class="hero-buttons">
-            <button type="button" class="btn">Download for iOS</button>
-            <button type="button" class="btn">Download for Mac</button>
+          <div class="hero-buttons flex flex-fd-c">
+            <button type="button" class="btn btn-primary">Download for iOS</button>
+            <button type="button" class="btn btn-secondary">Download for Mac</button>
           </div>
         </section>
 
         <section class="snippets">
           <div class="snippets-intro">
-            <h2>Keep track of your snippets</h2>
-            <p>
+            <h2 class="title">Keep track of your snippets</h2>
+            <p class="text">
               lipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac
               and iOS apps will help you organize everything.
             </p>
           </div>
-
           <div class="snippets-content">
             <figure class="snippets-computer">
-              <img src="images/image-computer.png" alt="Computer" />
+              <img src="images/image-computer.png" alt="Computer" width="100%" />
             </figure>
             <div class="snippets-descriptions">
               <div class="snippets-descriptions-statement">
-                <h3>Quick Search</h3>
-                <p>Easily search your snippets by content, category, web address, application, and more.</p>
+                <h3 class="subtitle">Quick Search</h3>
+                <p class="text">Easily search your snippets by content, category, web address, application, and more.</p>
               </div>
               <div class="snippets-descriptions-statement">
-                <h3>iCloud Sync</h3>
-                <p>Instantly saves and syncs snippets across all your devices.</p>
+                <h3 class="subtitle">iCloud Sync</h3>
+                <p class="text">Instantly saves and syncs snippets across all your devices.</p>
               </div>
               <div class="snippets-descriptions-statement">
-                <h3>Complete History</h3>
-                <p>Retrieve any snippets from the first moment you started using the app.</p>
+                <h3 class="subtitle">Complete History</h3>
+                <p class="text">Retrieve any snippets from the first moment you started using the app.</p>
               </div>
             </div>
           </div>
@@ -59,40 +62,40 @@
 
         <section class="access">
           <div class="access-description">
-            <h2>Access Clipboard anywhere</h2>
-            <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+            <h2 class="title">Access Clipboard anywhere</h2>
+            <p class="text">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
           </div>
           <figure class="access-img">
-            <img src="images/image-devices.png" alt="Devices" />
+            <img src="images/image-devices.png" alt="Devices" width="100%" />
           </figure>
         </section>
 
         <section class="workflow">
           <div class="workflow-intro">
-            <h2>Supercharge your workflow</h2>
-            <p>We’ve got the tools to boost your productivity.</p>
+            <h2 class="title">Supercharge your workflow</h2>
+            <p class="text">We’ve got the tools to boost your productivity.</p>
           </div>
-          <div class="workflow-details">
+          <div class="workflow-details flex flex-fd-c">
             <div class="workflow-details-control">
               <figure>
                 <img src="images/icon-blacklist.svg" alt="List" />
               </figure>
-              <h3>Create blacklists</h3>
-              <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+              <h3 class="subtitle">Create blacklists</h3>
+              <p class="text">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
             </div>
             <div class="workflow-details-control">
               <figure>
                 <img src="images/icon-text.svg" alt="Text" />
               </figure>
-              <h3>Plain text snippets</h3>
-              <p>Remove unwanted formatting from copied text for a consistent look.</p>
+              <h3 class="subtitle">Plain text snippets</h3>
+              <p class="text">Remove unwanted formatting from copied text for a consistent look.</p>
             </div>
             <div class="workflow-details-control">
               <figure>
                 <img src="images/icon-preview.svg" alt="Preview" />
               </figure>
-              <h3>Sneak preview</h3>
-              <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+              <h3 class="subtitle">Sneak preview</h3>
+              <p class="text">Quick preview of all snippets on your Clipboard for easy access.</p>
             </div>
           </div>
         </section>
@@ -117,17 +120,19 @@
 
         <section class="abstract">
           <div class="abstract-details">
-            <h3>Clipboard for iOS and Mac OS</h3>
-            <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+            <h2 class="title">Clipboard for iOS and Mac OS</h2>
+            <p class="text">
+              Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
+            </p>
           </div>
-          <div class="abstract-buttons">
-            <button type="button" class="btn">Download for iOS</button>
-            <button type="button" class="btn">Download for Mac</button>
+          <div class="abstract-buttons flex flex-fd-c">
+            <button type="button" class="btn btn-primary">Download for iOS</button>
+            <button type="button" class="btn btn-secondary">Download for Mac</button>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer wrapper">
         <figure class="footer-brand">
           <img src="images/logo.svg" alt="Logo footer" />
         </figure>
@@ -140,7 +145,7 @@
           <li><a href="#">Install Guide</a></li>
         </ul>
 
-        <ul>
+        <ul class="footer-networks">
           <li>
             <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" /></a>
           </li>
@@ -155,3 +160,4 @@
     </div>
   </body>
 </html>
+

@@ -1,16 +1,16 @@
 /**Primarios*/
-$pink: hsl(322, 100%, 66%);
-$light-pink: hsl(321, 100%, 78%);
-$light-red: hsl(0, 100%, 63%);
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
 
 /*Neutral*/
-$very-dark-cyan: hsl(192, 100%, 9%);
-$very-pale-blue: hsl(207, 100%, 98%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+$gray: hsl(220, 18%, 97%);
 
 $colors: (
-  primary-pink: $pink,
-  light-pink: $light-pink,
-  light-red: $light-red,
-  very-dark-cyan: $very-dark-cyan,
-  very-pale-blue: $very-pale-blue,
+  primary-cyan: $strong-cyan,
+  secondary-blue: $light-blue,
+  neutral-dark-grayish-blue: $dark-grayish-blue,
+  neutral-grayish-blue: $grayish-blue,
+  neutral-gray: $gray,
 );

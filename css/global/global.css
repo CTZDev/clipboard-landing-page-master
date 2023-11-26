@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   font-size: var(--fz-sm);
   text-rendering: optimizeSpeed;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 @media only screen and (min-width: 48em) {
   body {
@@ -89,7 +90,27 @@ picture {
 }
 
 .wrapper {
-  padding: 0 2rem;
+  padding: 0 1.875rem;
+}
+
+.text {
+  color: var(--neutral-grayish-blue);
+  line-height: 1.7;
+  text-align: center;
+}
+
+.title {
+  color: var(--neutral-dark-grayish-blue);
+  font-size: 1.8em;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: var(--neutral-dark-grayish-blue);
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 0.75rem;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

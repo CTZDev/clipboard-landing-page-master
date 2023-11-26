@@ -1,0 +1,34 @@
+@use "../util" as *;
+
+.container {
+  padding-top: rem(100);
+  position: relative;
+
+  .header {
+    padding: rem(40) 0 rem(20);
+
+    &-brand > img {
+      margin: auto;
+    }
+  }
+
+  &::before {
+    $img: "../images/bg-header-mobile.png";
+    content: "";
+    background-image: url($img);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+
+    @include mq(medium) {
+      $img: "../images/bg-header-desktop.png";
+      background-image: url($img);
+    }
+  }
+}

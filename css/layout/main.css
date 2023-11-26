@@ -1,3 +1,62 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10.5rem;
+}
 
+.hero {
+  text-align: center;
+}
+.hero-content {
+  padding: 3.125rem 0;
+}
+.hero-buttons {
+  gap: 1rem;
+}
+
+.snippets-computer {
+  padding: 4rem 0;
+}
+.snippets-descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.access-img {
+  padding-top: 4rem;
+}
+
+.workflow-intro {
+  padding-bottom: 5.375rem;
+}
+.workflow-details {
+  gap: 3.125rem;
+}
+.workflow-details-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.workflow-details-control .subtitle {
+  padding: 2.5rem 0 1.25rem;
+}
+
+.enterprises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.abstract {
+  padding-bottom: 10.25rem;
+}
+.abstract-buttons {
+  gap: 1rem;
+  padding-top: 2.875rem;
+}
 
 /*# sourceMappingURL=main.css.map */

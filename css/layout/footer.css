@@ -1,3 +1,28 @@
-
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.875rem;
+  padding: 3rem 0;
+  background-color: var(--neutral-gray);
+}
+.footer-brand > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.footer-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  text-align: center;
+}
+.footer-list a {
+  color: var(--neutral-dark-grayish-blue);
+  text-decoration: none;
+}
+.footer .footer-networks {
+  display: flex;
+  gap: 2.25rem;
+}
 
 /*# sourceMappingURL=footer.css.map */

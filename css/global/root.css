@@ -1,11 +1,11 @@
 /**Primarios*/
 /*Neutral*/
 :root {
-  --primary-pink: hsl(322, 100%, 66%);
-  --light-pink: hsl(321, 100%, 78%);
-  --light-red: hsl(0, 100%, 63%);
-  --very-dark-cyan: hsl(192, 100%, 9%);
-  --very-pale-blue: hsl(207, 100%, 98%);
+  --primary-cyan: hsl(171, 66%, 44%);
+  --secondary-blue: hsl(233, 100%, 69%);
+  --neutral-dark-grayish-blue: hsl(210, 10%, 33%);
+  --neutral-grayish-blue: hsl(201, 11%, 66%);
+  --neutral-gray: hsl(220, 18%, 97%);
   --font-family: "Open Sans", "Poppins", arial;
   --fz-sm: 16px;
   --fz-md: 18px;

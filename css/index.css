@@ -1,11 +1,36 @@
+.btn {
+  max-width: 23.4375rem;
+  outline: none;
+  border: none;
+  border-radius: 2.125rem;
+  cursor: pointer;
+  padding: 0.875rem;
+  color: #fff;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.025) translateY(-1px);
+}
+.btn-primary {
+  background-color: var(--primary-cyan);
+  box-shadow: 0 3px 3px hsl(171, 55%, 25%);
+}
+.btn-secondary {
+  background-color: var(--secondary-blue);
+  box-shadow: 0 3px 3px hsl(233, 41%, 43%);
+}
+
 /**Primarios*/
 /*Neutral*/
 :root {
-  --primary-pink: hsl(322, 100%, 66%);
-  --light-pink: hsl(321, 100%, 78%);
-  --light-red: hsl(0, 100%, 63%);
-  --very-dark-cyan: hsl(192, 100%, 9%);
-  --very-pale-blue: hsl(207, 100%, 98%);
+  --primary-cyan: hsl(171, 66%, 44%);
+  --secondary-blue: hsl(233, 100%, 69%);
+  --neutral-dark-grayish-blue: hsl(210, 10%, 33%);
+  --neutral-grayish-blue: hsl(201, 11%, 66%);
+  --neutral-gray: hsl(220, 18%, 97%);
   --font-family: "Open Sans", "Poppins", arial;
   --fz-sm: 16px;
   --fz-md: 18px;
@@ -33,6 +58,7 @@ body {
   min-height: 100vh;
   font-size: var(--fz-sm);
   text-rendering: optimizeSpeed;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 @media only screen and (min-width: 48em) {
   body {
@@ -102,7 +128,27 @@ picture {
 }
 
 .wrapper {
-  padding: 0 2rem;
+  padding: 0 1.875rem;
+}
+
+.text {
+  color: var(--neutral-grayish-blue);
+  line-height: 1.7;
+  text-align: center;
+}
+
+.title {
+  color: var(--neutral-dark-grayish-blue);
+  font-size: 1.8em;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: var(--neutral-dark-grayish-blue);
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 0.75rem;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -118,6 +164,122 @@ picture {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.container {
+  padding-top: 6.25rem;
+  position: relative;
+}
+.container .header {
+  padding: 2.5rem 0 1.25rem;
+}
+.container .header-brand > img {
+  margin: auto;
+}
+.container::before {
+  content: "";
+  background-image: url("../images/bg-header-mobile.png");
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+@media only screen and (min-width: 64em) {
+  .container::before {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10.5rem;
+}
+
+.hero {
+  text-align: center;
+}
+.hero-content {
+  padding: 3.125rem 0;
+}
+.hero-buttons {
+  gap: 1rem;
+}
+
+.snippets-computer {
+  padding: 4rem 0;
+}
+.snippets-descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.access-img {
+  padding-top: 4rem;
+}
+
+.workflow-intro {
+  padding-bottom: 5.375rem;
+}
+.workflow-details {
+  gap: 3.125rem;
+}
+.workflow-details-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.workflow-details-control .subtitle {
+  padding: 2.5rem 0 1.25rem;
+}
+
+.enterprises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.abstract {
+  padding-bottom: 10.25rem;
+}
+.abstract-buttons {
+  gap: 1rem;
+  padding-top: 2.875rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.875rem;
+  padding: 3rem 0;
+  background-color: var(--neutral-gray);
+}
+.footer-brand > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.footer-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  text-align: center;
+}
+.footer-list a {
+  color: var(--neutral-dark-grayish-blue);
+  text-decoration: none;
+}
+.footer .footer-networks {
+  display: flex;
+  gap: 2.25rem;
 }
 
 /*# sourceMappingURL=index.css.map */
