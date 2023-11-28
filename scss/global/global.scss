@@ -23,10 +23,6 @@ body {
   font-size: var(--fz-sm);
   text-rendering: optimizeSpeed;
   font-family: "Bai Jamjuree", sans-serif;
-
-  @include mq(small) {
-    font-size: var(--fz-md);
-  }
 }
 
 li {

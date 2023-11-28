@@ -11,7 +11,6 @@
 .container::before {
   content: "";
   background-image: url("../images/bg-header-mobile.png");
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +20,7 @@
   background-size: contain;
   z-index: -1;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 55.625em) {
   .container::before {
     background-image: url("../images/bg-header-desktop.png");
   }

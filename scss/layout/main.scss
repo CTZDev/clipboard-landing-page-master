@@ -2,7 +2,6 @@
 
 .main {
   display: grid;
-  grid-template-columns: 1fr;
   gap: rem(168);
 }
 
@@ -11,42 +10,125 @@
 
   &-content {
     padding: rem(50) 0;
+    max-width: rem(670);
+    margin: auto;
+
+    @include mq(medium) {
+      & .title {
+        font-size: 2.2em;
+      }
+    }
   }
 
   &-buttons {
     gap: rem(16);
+
+    @include mq(medium) {
+      flex-direction: initial;
+      justify-content: center;
+      gap: rem(20);
+    }
   }
 }
 
 .snippets {
+  &-intro {
+    max-width: rem(670);
+    margin: auto;
+
+    @include mq(medium) {
+      padding-bottom: rem(82);
+    }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(110);
+    align-items: center;
+    justify-content: center;
+
+    @include mq(medium) {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 rem(-30);
+    }
+  }
+
+  @include mq(medium) {
+    & .title {
+      font-size: 1.9em;
+    }
+  }
+
   &-computer {
     padding: rem(64) 0;
+    grid-column: 1 / -1;
+
+    @include mq(medium) {
+      padding: 0;
+      grid-column: 1 / 2;
+    }
   }
 
   &-descriptions {
     display: flex;
     flex-direction: column;
     gap: rem(56);
+    grid-column: 1 / -1;
+
+    @include mq(medium) {
+      justify-content: center;
+      max-width: rem(354);
+      grid-column: 2 / -1;
+
+      & * {
+        text-align: left;
+      }
+    }
   }
 }
 
-.access-img {
-  padding-top: rem(64);
+.access {
+  max-width: rem(670);
+  margin: auto;
+  &-img {
+    padding-top: rem(64);
+
+    @include mq(medium) {
+      padding-top: rem(112);
+      margin-bottom: rem(-68);
+    }
+  }
 }
 
 .workflow {
+  max-width: rem(1440);
+  margin: auto;
+
   &-intro {
     padding-bottom: rem(86);
+    max-width: rem(670);
+    margin: auto;
   }
 
   &-details {
     gap: rem(50);
+
+    @include mq(medium) {
+      flex-direction: initial;
+      gap: rem(90);
+    }
 
     &-control {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @include mq(medium) {
+        max-width: rem(350);
+        margin: auto;
+      }
 
       & .subtitle {
         padding: rem(40) 0 rem(20);
@@ -61,13 +143,29 @@
   align-items: center;
   justify-content: center;
   gap: rem(56);
+
+  @include mq(medium) {
+    flex-direction: initial;
+    gap: rem(100);
+
+    & img {
+      width: rem(175);
+    }
+  }
 }
 
 .abstract {
   padding-bottom: rem(164);
+  max-width: rem(670);
+  margin: auto;
 
   &-buttons {
     gap: rem(16);
     padding-top: rem(46);
+
+    @include mq(medium) {
+      flex-direction: initial;
+      justify-content: center;
+    }
   }
 }

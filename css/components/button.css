@@ -1,15 +1,22 @@
 .btn {
-  max-width: 23.4375rem;
+  max-width: 20rem;
+  width: 100%;
   outline: none;
   border: none;
   border-radius: 2.125rem;
   cursor: pointer;
-  padding: 0.875rem;
+  padding: 0.875rem 0;
   color: #fff;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.1em;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (min-width: 55.625em) {
+  .btn {
+    max-width: 12.5rem;
+    font-size: 1rem;
+  }
 }
 .btn:hover {
   transform: scale(1.025) translateY(-1px);
@@ -18,9 +25,15 @@
   background-color: var(--primary-cyan);
   box-shadow: 0 3px 3px hsl(171, 55%, 25%);
 }
+.btn-primary:hover {
+  background-color: hsla(171, 66%, 44%, 0.8);
+}
 .btn-secondary {
   background-color: var(--secondary-blue);
   box-shadow: 0 3px 3px hsl(233, 41%, 43%);
+}
+.btn-secondary:hover {
+  background-color: hsla(233, 100%, 69%, 0.8);
 }
 
 /*# sourceMappingURL=button.css.map */

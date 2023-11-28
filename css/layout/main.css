@@ -1,6 +1,5 @@
 .main {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 10.5rem;
 }
 
@@ -9,35 +8,122 @@
 }
 .hero-content {
   padding: 3.125rem 0;
+  max-width: 41.875rem;
+  margin: auto;
+}
+@media only screen and (min-width: 55.625em) {
+  .hero-content .title {
+    font-size: 2.2em;
+  }
 }
 .hero-buttons {
   gap: 1rem;
 }
+@media only screen and (min-width: 55.625em) {
+  .hero-buttons {
+    flex-direction: initial;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}
 
+.snippets-intro {
+  max-width: 41.875rem;
+  margin: auto;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-intro {
+    padding-bottom: 5.125rem;
+  }
+}
+.snippets-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6.875rem;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-content {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 -1.875rem;
+  }
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets .title {
+    font-size: 1.9em;
+  }
+}
 .snippets-computer {
   padding: 4rem 0;
+  grid-column: 1/-1;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-computer {
+    padding: 0;
+    grid-column: 1/2;
+  }
 }
 .snippets-descriptions {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+  grid-column: 1/-1;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-descriptions {
+    justify-content: center;
+    max-width: 22.125rem;
+    grid-column: 2/-1;
+  }
+  .snippets-descriptions * {
+    text-align: left;
+  }
 }
 
+.access {
+  max-width: 41.875rem;
+  margin: auto;
+}
 .access-img {
   padding-top: 4rem;
 }
+@media only screen and (min-width: 55.625em) {
+  .access-img {
+    padding-top: 7rem;
+    margin-bottom: -4.25rem;
+  }
+}
 
+.workflow {
+  max-width: 90rem;
+  margin: auto;
+}
 .workflow-intro {
   padding-bottom: 5.375rem;
+  max-width: 41.875rem;
+  margin: auto;
 }
 .workflow-details {
   gap: 3.125rem;
+}
+@media only screen and (min-width: 55.625em) {
+  .workflow-details {
+    flex-direction: initial;
+    gap: 5.625rem;
+  }
 }
 .workflow-details-control {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (min-width: 55.625em) {
+  .workflow-details-control {
+    max-width: 21.875rem;
+    margin: auto;
+  }
 }
 .workflow-details-control .subtitle {
   padding: 2.5rem 0 1.25rem;
@@ -50,13 +136,30 @@
   justify-content: center;
   gap: 3.5rem;
 }
+@media only screen and (min-width: 55.625em) {
+  .enterprises {
+    flex-direction: initial;
+    gap: 6.25rem;
+  }
+  .enterprises img {
+    width: 10.9375rem;
+  }
+}
 
 .abstract {
   padding-bottom: 10.25rem;
+  max-width: 41.875rem;
+  margin: auto;
 }
 .abstract-buttons {
   gap: 1rem;
   padding-top: 2.875rem;
+}
+@media only screen and (min-width: 55.625em) {
+  .abstract-buttons {
+    flex-direction: initial;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

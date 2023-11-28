@@ -22,11 +22,6 @@ body {
   text-rendering: optimizeSpeed;
   font-family: "Bai Jamjuree", sans-serif;
 }
-@media only screen and (min-width: 48em) {
-  body {
-    font-size: var(--fz-md);
-  }
-}
 
 li {
   list-style: none;

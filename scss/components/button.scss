@@ -1,17 +1,23 @@
 @use "../util" as *;
 
 .btn {
-  max-width: rem(375);
+  max-width: rem(320);
+  width: 100%;
   outline: none;
   border: none;
   border-radius: rem(34);
   cursor: pointer;
-  padding: rem(14);
+  padding: rem(14) 0;
   color: #fff;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.1em;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+
+  @include mq(medium) {
+    max-width: rem(200);
+    font-size: 1rem;
+  }
 
   &:hover {
     transform: scale(1.025) translateY(-1px);
@@ -20,10 +26,18 @@
   &-primary {
     background-color: var(--primary-cyan);
     box-shadow: 0 3px 3px hsl(171, 55%, 25%);
+
+    &:hover {
+      background-color: hsla(171, 66%, 44%, 0.8);
+    }
   }
 
   &-secondary {
     background-color: var(--secondary-blue);
     box-shadow: 0 3px 3px hsl(233, 41%, 43%);
+
+    &:hover {
+      background-color: hsla(233, 100%, 69%, 0.8);
+    }
   }
 }

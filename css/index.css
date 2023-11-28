@@ -1,15 +1,22 @@
 .btn {
-  max-width: 23.4375rem;
+  max-width: 20rem;
+  width: 100%;
   outline: none;
   border: none;
   border-radius: 2.125rem;
   cursor: pointer;
-  padding: 0.875rem;
+  padding: 0.875rem 0;
   color: #fff;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.1em;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (min-width: 55.625em) {
+  .btn {
+    max-width: 12.5rem;
+    font-size: 1rem;
+  }
 }
 .btn:hover {
   transform: scale(1.025) translateY(-1px);
@@ -18,9 +25,15 @@
   background-color: var(--primary-cyan);
   box-shadow: 0 3px 3px hsl(171, 55%, 25%);
 }
+.btn-primary:hover {
+  background-color: hsla(171, 66%, 44%, 0.8);
+}
 .btn-secondary {
   background-color: var(--secondary-blue);
   box-shadow: 0 3px 3px hsl(233, 41%, 43%);
+}
+.btn-secondary:hover {
+  background-color: hsla(233, 100%, 69%, 0.8);
 }
 
 /**Primarios*/
@@ -59,11 +72,6 @@ body {
   font-size: var(--fz-sm);
   text-rendering: optimizeSpeed;
   font-family: "Bai Jamjuree", sans-serif;
-}
-@media only screen and (min-width: 48em) {
-  body {
-    font-size: var(--fz-md);
-  }
 }
 
 li {
@@ -178,7 +186,6 @@ picture {
 .container::before {
   content: "";
   background-image: url("../images/bg-header-mobile.png");
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -188,7 +195,7 @@ picture {
   background-size: contain;
   z-index: -1;
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 55.625em) {
   .container::before {
     background-image: url("../images/bg-header-desktop.png");
   }
@@ -196,7 +203,6 @@ picture {
 
 .main {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 10.5rem;
 }
 
@@ -205,35 +211,122 @@ picture {
 }
 .hero-content {
   padding: 3.125rem 0;
+  max-width: 41.875rem;
+  margin: auto;
+}
+@media only screen and (min-width: 55.625em) {
+  .hero-content .title {
+    font-size: 2.2em;
+  }
 }
 .hero-buttons {
   gap: 1rem;
 }
+@media only screen and (min-width: 55.625em) {
+  .hero-buttons {
+    flex-direction: initial;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}
 
+.snippets-intro {
+  max-width: 41.875rem;
+  margin: auto;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-intro {
+    padding-bottom: 5.125rem;
+  }
+}
+.snippets-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6.875rem;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-content {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 -1.875rem;
+  }
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets .title {
+    font-size: 1.9em;
+  }
+}
 .snippets-computer {
   padding: 4rem 0;
+  grid-column: 1/-1;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-computer {
+    padding: 0;
+    grid-column: 1/2;
+  }
 }
 .snippets-descriptions {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+  grid-column: 1/-1;
+}
+@media only screen and (min-width: 55.625em) {
+  .snippets-descriptions {
+    justify-content: center;
+    max-width: 22.125rem;
+    grid-column: 2/-1;
+  }
+  .snippets-descriptions * {
+    text-align: left;
+  }
 }
 
+.access {
+  max-width: 41.875rem;
+  margin: auto;
+}
 .access-img {
   padding-top: 4rem;
 }
+@media only screen and (min-width: 55.625em) {
+  .access-img {
+    padding-top: 7rem;
+    margin-bottom: -4.25rem;
+  }
+}
 
+.workflow {
+  max-width: 90rem;
+  margin: auto;
+}
 .workflow-intro {
   padding-bottom: 5.375rem;
+  max-width: 41.875rem;
+  margin: auto;
 }
 .workflow-details {
   gap: 3.125rem;
+}
+@media only screen and (min-width: 55.625em) {
+  .workflow-details {
+    flex-direction: initial;
+    gap: 5.625rem;
+  }
 }
 .workflow-details-control {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (min-width: 55.625em) {
+  .workflow-details-control {
+    max-width: 21.875rem;
+    margin: auto;
+  }
 }
 .workflow-details-control .subtitle {
   padding: 2.5rem 0 1.25rem;
@@ -246,13 +339,34 @@ picture {
   justify-content: center;
   gap: 3.5rem;
 }
+@media only screen and (min-width: 55.625em) {
+  .enterprises {
+    flex-direction: initial;
+    gap: 6.25rem;
+  }
+  .enterprises img {
+    width: 10.9375rem;
+  }
+}
 
 .abstract {
   padding-bottom: 10.25rem;
+  max-width: 41.875rem;
+  margin: auto;
 }
 .abstract-buttons {
   gap: 1rem;
   padding-top: 2.875rem;
+}
+@media only screen and (min-width: 55.625em) {
+  .abstract-buttons {
+    flex-direction: initial;
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: var(--neutral-gray);
 }
 
 .footer {
@@ -260,26 +374,75 @@ picture {
   flex-direction: column;
   align-items: center;
   gap: 2.875rem;
-  padding: 3rem 0;
-  background-color: var(--neutral-gray);
+  padding: 3rem 1.875rem;
+  max-width: 90rem;
+  margin: auto;
+}
+@media only screen and (min-width: 55.625em) {
+  .footer {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
 }
 .footer-brand > img {
   width: 3.5rem;
   height: 3.5rem;
 }
+@media only screen and (min-width: 55.625em) {
+  .footer-brand > img {
+    width: 4.5em;
+    height: 4.5em;
+  }
+}
 .footer-list {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
   gap: 1.75rem;
   text-align: center;
+}
+@media only screen and (min-width: 55.625em) {
+  .footer-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    text-align: left;
+    gap: 1.5rem;
+    column-gap: 5rem;
+  }
+  .footer-list li:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .footer-list li:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .footer-list li:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .footer-list li:nth-child(5) {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+  }
 }
 .footer-list a {
   color: var(--neutral-dark-grayish-blue);
   text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+.footer-list a:hover {
+  color: var(--primary-cyan);
 }
 .footer .footer-networks {
   display: flex;
   gap: 2.25rem;
+}
+.footer .footer-networks a img {
+  transition: all 300ms ease-in-out;
+}
+.footer .footer-networks a img:hover {
+  filter: brightness(175%) saturate(850%);
 }
 
 /*# sourceMappingURL=index.css.map */
